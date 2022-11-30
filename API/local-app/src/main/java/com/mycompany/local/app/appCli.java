@@ -74,7 +74,7 @@ public class appCli {
 
             Integer idMaquina = maquina.nextInt();
 
-            log.gerarLog(email, idMaquina);
+            //log.gerarLog(email, idMaquina);
             TesteSistema iniciarDados = new TesteSistema(idMaquina);
             iniciarDados.exec();
         }
