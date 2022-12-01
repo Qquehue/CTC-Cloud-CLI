@@ -61,7 +61,7 @@ public class Cruds {
         String memorias = Conversor.formatarBytes(memoria.getEmUso()).replace("GiB", "").replace(",", ".");
         Double memoriaAtual = Double.parseDouble(memorias);
         maquina.setUsoCPU(proc.getUso());
-        String cpus = Conversor.formatarBytes(proc.getUso().longValue()).replace("GiB", "").replace(",", ".").replace("bytes", "");
+        String cpus = Conversor.formatarBytes(proc.getUso().longValue()).replace("MiB", "").replace(",", ".").replace("bytes", "");
         Double cpuAtual = Double.parseDouble(cpus);
         Integer processosAtual = processos.getTotalProcessos();
         String memoria2 = Conversor.formatarBytes(memoria.getTotal()).replace("GiB", "").replace(",", ".");

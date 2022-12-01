@@ -65,7 +65,7 @@ public class Log {
             for (int i = 0; i < 1; i++) {
                 Date hours = new Date();
                 
-                String memoriasHD = Conversor.formatarBytes(discos.getTamanhoTotal()).replace("TiB", "").replace(",", ".");
+                String memoriasHD = Conversor.formatarBytes(discos.getTamanhoTotal()).replace("GiB", "").replace(",", ".");
                 Double memoriaHDAtual = Double.parseDouble(memoriasHD);
                 
                 String memorias = Conversor.formatarBytes(memoria.getTotal()).replace("GiB", "").replace(",", ".");
